@@ -15,10 +15,11 @@
     let secretNumber = Math.floor(Math.random() * 100) + 1;
 
     function checkGuess(){
+      
       let guess = document.getElementById("guess").value;
       let resultElement = document.getElementById("Result");
 
-      if(guess==secretNumber)
+      if (guess == secretNumber)
       {
         resultElement.textContent = "YAY"
       }
