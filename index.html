@@ -12,17 +12,17 @@
     <p id ="Result"></p>
   </body>
   <script>
-    let SecretNumber = Math.floor(Math.random() * 100) + 1;
+    let secretNumber = Math.floor(Math.random() * 100) + 1;
 
     function checkGuess(){
       let guess = document.getElementById("guess").value;
       let resultElement = document.getElementById("Result");
 
-      if(guess == SecretNumber)
+      if(guess==secretNumber)
       {
         resultElement.textContent = "YAY"
       }
-      else if (guess > SecretNumber){
+      else if (guess>secretNumbe){
          resultELement.textContent = "Terlalu Besar"
       }
       else{
