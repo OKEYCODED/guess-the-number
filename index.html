@@ -9,14 +9,14 @@
     <input type ="number" placeholder ="Insert Number"
       id="guess"></input>
     <button onclick="checkGuess()">CLICK TO GUESS</button>
-    <p id ="result"></p>
+    <p id ="Result"></p>
   </body>
   <script>
     let secretNumber = Math.floor(Math.random() * 100) + 1;
 
     function checkGuess(){
       let guess = document.getElementById("guess").value;
-      let resultElement = document.getElementById("result");
+      let resultElement = document.getElementById("Result");
 
       if(guess == secretNumber)
       {
